@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum TableViewItem {
+    case Text(viewData: TextCellViewData)
+    case Image(viewData: ImageCellViewData)
+}
+
 private let appleConfiguration = ImageCellViewData(image: UIImage(named: "Apple")!)
 private let googleConfiguration = ImageCellViewData(image: UIImage(named: "Google")!)
 
@@ -18,11 +23,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    var items: [Any] = [
-        TextCellViewData(title: "Foo"),
-        ImageCellViewData(image: UIImage(named: "Apple")!),
-        ImageCellViewData(image: UIImage(named: "Google")!),
-        TextCellViewData(title: "Bar"),
+    var items: [TableViewItem] = [
+        .Text(viewData: TextCellViewData(title: "Foo")),
+        .Image(viewData: ImageCellViewData(image: UIImage(named: "Apple")!)),
+        .Image(viewData: ImageCellViewData(image: UIImage(named: "Google")!)),
+        .Text(viewData: TextCellViewData(title: "Bar")),
     ]
 
     override func viewDidLoad() {
@@ -33,8 +38,20 @@ class ViewController: UIViewController {
     }
 
     func registerCells() {
-        tableView.registerClass(TextTableViewCell.self, forCellReuseIdentifier: textCellIdentifier)
-        tableView.registerClass(ImageTableViewCell.self, forCellReuseIdentifier: imageCellIdentifier)
+        for item in items {
+            let cellClass: AnyClass
+            let identifier: String
+
+            switch(item) {
+            case .Text(viewData: _):
+                cellClass = TextTableViewCell.self
+                identifier = textCellIdentifier
+            case .Image(viewData: _):
+                cellClass = ImageTableViewCell.self
+                identifier = imageCellIdentifier
+            }
+            tableView.registerClass(cellClass, forCellReuseIdentifier: identifier)
+        }
     }
 }
 
@@ -45,18 +62,19 @@ extension ViewController: UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let viewData = items[indexPath.row]
+        let item = items[indexPath.row]
 
-        if (viewData is TextCellViewData) {
+        switch(item) {
+        case let .Text(viewData: viewData):
             let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier) as! TextTableViewCell
-            cell.updateWithViewData(viewData as! TextCellViewData)
+            cell.updateWithViewData(viewData)
             return cell
-        } else if (viewData is ImageCellViewData) {
+        case let .Image(viewData: viewData):
             let cell = tableView.dequeueReusableCellWithIdentifier(imageCellIdentifier) as! ImageTableViewCell
-            cell.updateWithViewData(viewData as! ImageCellViewData)
+            cell.updateWithViewData(viewData)
             return cell
         }
-        
-        fatalError()
+
     }
+
 }
