@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        let viewController = ConfigurableTableViewController(configurations: [
+        let viewController = ConfigurableTableViewController(items: [
             CellConfiguration<TextTableViewCell>(viewData: TextCellViewData(title: "Foo")),
             CellConfiguration<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "Apple")!)),
             CellConfiguration<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "Google")!)),

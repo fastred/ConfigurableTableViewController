@@ -39,7 +39,7 @@ import ConfigurableTableViewController
 
 ...
 
-let viewController = ConfigurableTableViewController(configurations: [
+let viewController = ConfigurableTableViewController(items: [
     CellConfiguration<TextTableViewCell>(viewData: TextCellViewData(title: "Foo")),
     CellConfiguration<ImageTableViewCell>(viewData: ImageCellViewData(image: apple)),
     CellConfiguration<ImageTableViewCell>(viewData: ImageCellViewData(image: google)),
