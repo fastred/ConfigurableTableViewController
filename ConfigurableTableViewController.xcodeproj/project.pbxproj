@@ -8,16 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		A6A9CC841C39478400512ECA /* ConfigurableTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A6A9CC831C39478400512ECA /* ConfigurableTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6A9CC921C3947E000512ECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9CC911C3947E000512ECA /* AppDelegate.swift */; };
+		A6A9CC941C3947E000512ECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9CC931C3947E000512ECA /* ViewController.swift */; };
+		A6A9CC971C3947E000512ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A9CC951C3947E000512ECA /* Main.storyboard */; };
+		A6A9CC991C3947E000512ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A9CC981C3947E000512ECA /* Assets.xcassets */; };
+		A6A9CC9C1C3947E000512ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A9CC9A1C3947E000512ECA /* LaunchScreen.storyboard */; };
+		A6A9CCA21C39482100512ECA /* ConfigurableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9CCA11C39482100512ECA /* ConfigurableTableViewController.swift */; };
+		A6A9CCAF1C39495B00512ECA /* ConfigurableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9CCA11C39482100512ECA /* ConfigurableTableViewController.swift */; };
+		A6A9CCB41C39498F00512ECA /* ImageCellViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9CCB01C39498F00512ECA /* ImageCellViewData.swift */; };
+		A6A9CCB51C39498F00512ECA /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9CCB11C39498F00512ECA /* ImageTableViewCell.swift */; };
+		A6A9CCB61C39498F00512ECA /* TextCellViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9CCB21C39498F00512ECA /* TextCellViewData.swift */; };
+		A6A9CCB71C39498F00512ECA /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9CCB31C39498F00512ECA /* TextTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A6A9CC801C39478400512ECA /* ConfigurableTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConfigurableTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A9CC831C39478400512ECA /* ConfigurableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigurableTableViewController.h; sourceTree = "<group>"; };
 		A6A9CC851C39478400512ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6A9CC8F1C3947E000512ECA /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A9CC911C3947E000512ECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6A9CC931C3947E000512ECA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6A9CC961C3947E000512ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6A9CC981C3947E000512ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6A9CC9B1C3947E000512ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6A9CC9D1C3947E000512ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6A9CCA11C39482100512ECA /* ConfigurableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableTableViewController.swift; sourceTree = "<group>"; };
+		A6A9CCB01C39498F00512ECA /* ImageCellViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCellViewData.swift; sourceTree = "<group>"; };
+		A6A9CCB11C39498F00512ECA /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		A6A9CCB21C39498F00512ECA /* TextCellViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCellViewData.swift; sourceTree = "<group>"; };
+		A6A9CCB31C39498F00512ECA /* TextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A6A9CC7C1C39478400512ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A9CC8C1C3947E000512ECA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				A6A9CC821C39478400512ECA /* ConfigurableTableViewController */,
+				A6A9CC901C3947E000512ECA /* ExampleApp */,
 				A6A9CC811C39478400512ECA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				A6A9CC801C39478400512ECA /* ConfigurableTableViewController.framework */,
+				A6A9CC8F1C3947E000512ECA /* ExampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,8 +80,26 @@
 			children = (
 				A6A9CC831C39478400512ECA /* ConfigurableTableViewController.h */,
 				A6A9CC851C39478400512ECA /* Info.plist */,
+				A6A9CCA11C39482100512ECA /* ConfigurableTableViewController.swift */,
 			);
 			path = ConfigurableTableViewController;
+			sourceTree = "<group>";
+		};
+		A6A9CC901C3947E000512ECA /* ExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				A6A9CCB01C39498F00512ECA /* ImageCellViewData.swift */,
+				A6A9CCB11C39498F00512ECA /* ImageTableViewCell.swift */,
+				A6A9CCB21C39498F00512ECA /* TextCellViewData.swift */,
+				A6A9CCB31C39498F00512ECA /* TextTableViewCell.swift */,
+				A6A9CC911C3947E000512ECA /* AppDelegate.swift */,
+				A6A9CC931C3947E000512ECA /* ViewController.swift */,
+				A6A9CC951C3947E000512ECA /* Main.storyboard */,
+				A6A9CC981C3947E000512ECA /* Assets.xcassets */,
+				A6A9CC9A1C3947E000512ECA /* LaunchScreen.storyboard */,
+				A6A9CC9D1C3947E000512ECA /* Info.plist */,
+			);
+			path = ExampleApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +134,37 @@
 			productReference = A6A9CC801C39478400512ECA /* ConfigurableTableViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A6A9CC8E1C3947E000512ECA /* ExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6A9CC9E1C3947E000512ECA /* Build configuration list for PBXNativeTarget "ExampleApp" */;
+			buildPhases = (
+				A6A9CC8B1C3947E000512ECA /* Sources */,
+				A6A9CC8C1C3947E000512ECA /* Frameworks */,
+				A6A9CC8D1C3947E000512ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExampleApp;
+			productName = ExampleApp;
+			productReference = A6A9CC8F1C3947E000512ECA /* ExampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A6A9CC771C39478400512ECA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Arkadiusz Holko";
 				TargetAttributes = {
 					A6A9CC7F1C39478400512ECA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A6A9CC8E1C3947E000512ECA = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -104,6 +175,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A6A9CC761C39478400512ECA;
 			productRefGroup = A6A9CC811C39478400512ECA /* Products */;
@@ -111,6 +183,7 @@
 			projectRoot = "";
 			targets = (
 				A6A9CC7F1C39478400512ECA /* ConfigurableTableViewController */,
+				A6A9CC8E1C3947E000512ECA /* ExampleApp */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +196,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A6A9CC8D1C3947E000512ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A9CC9C1C3947E000512ECA /* LaunchScreen.storyboard in Resources */,
+				A6A9CC991C3947E000512ECA /* Assets.xcassets in Resources */,
+				A6A9CC971C3947E000512ECA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -130,10 +213,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A9CCA21C39482100512ECA /* ConfigurableTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A9CC8B1C3947E000512ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A9CC941C3947E000512ECA /* ViewController.swift in Sources */,
+				A6A9CCB71C39498F00512ECA /* TextTableViewCell.swift in Sources */,
+				A6A9CCAF1C39495B00512ECA /* ConfigurableTableViewController.swift in Sources */,
+				A6A9CCB51C39498F00512ECA /* ImageTableViewCell.swift in Sources */,
+				A6A9CCB61C39498F00512ECA /* TextCellViewData.swift in Sources */,
+				A6A9CCB41C39498F00512ECA /* ImageCellViewData.swift in Sources */,
+				A6A9CC921C3947E000512ECA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A6A9CC951C3947E000512ECA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6A9CC961C3947E000512ECA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6A9CC9A1C3947E000512ECA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6A9CC9B1C3947E000512ECA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A6A9CC861C39478400512ECA /* Debug */ = {
@@ -228,6 +345,25 @@
 		A6A9CC891C39478400512ECA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ConfigurableTableViewController/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.holko.ConfigurableTableViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6A9CC8A1C39478400512ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -239,21 +375,27 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		A6A9CC8A1C39478400512ECA /* Release */ = {
+		A6A9CC9F1C3947E000512ECA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ConfigurableTableViewController/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pl.holko.ConfigurableTableViewController;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.holko.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A6A9CCA01C3947E000512ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.holko.ExampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -276,6 +418,16 @@
 				A6A9CC8A1C39478400512ECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6A9CC9E1C3947E000512ECA /* Build configuration list for PBXNativeTarget "ExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A9CC9F1C3947E000512ECA /* Debug */,
+				A6A9CCA01C3947E000512ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
