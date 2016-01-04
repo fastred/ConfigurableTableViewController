@@ -1,6 +1,6 @@
 # ConfigurableTableViewController
 
-Simple view controller that provides a way to configure a table view with multiple types of cells while keeping type safety. To learn what and whys I encourage you to read the associated blog post (TODO: LINK).
+Simple view controller that provides a way to configure a table view with multiple types of cells while keeping type safety. To learn what and whys I encourage you to read the [associated blog post][blog-post].
 
 ## Usage
 
@@ -72,4 +72,5 @@ Arkadiusz Holko:
 
  [Framework]: https://github.com/fastred/ConfigurableTableViewController/tree/master/Framework
  [ExampleApp]: https://github.com/fastred/ConfigurableTableViewController/tree/master/ExampleApp
+ [blog-post]: http://holko.pl/2016/01/05/typed-table-view-controller/
 
