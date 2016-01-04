@@ -20,8 +20,8 @@
 		A6A9CCB51C39498F00512ECA /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9CCB11C39498F00512ECA /* ImageTableViewCell.swift */; };
 		A6A9CCB61C39498F00512ECA /* TextCellViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9CCB21C39498F00512ECA /* TextCellViewData.swift */; };
 		A6A9CCB71C39498F00512ECA /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9CCB31C39498F00512ECA /* TextTableViewCell.swift */; };
-		A6A9CCBA1C394B5800512ECA /* CellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9CCB91C394B5800512ECA /* CellConfiguration.swift */; };
-		A6A9CCBB1C394B8800512ECA /* CellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9CCB91C394B5800512ECA /* CellConfiguration.swift */; };
+		A6A9CCBA1C394B5800512ECA /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9CCB91C394B5800512ECA /* CellConfigurator.swift */; };
+		A6A9CCBB1C394B8800512ECA /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9CCB91C394B5800512ECA /* CellConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 		A6A9CCB11C39498F00512ECA /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		A6A9CCB21C39498F00512ECA /* TextCellViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCellViewData.swift; sourceTree = "<group>"; };
 		A6A9CCB31C39498F00512ECA /* TextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
-		A6A9CCB91C394B5800512ECA /* CellConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfiguration.swift; sourceTree = "<group>"; };
+		A6A9CCB91C394B5800512ECA /* CellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 				A6A9CC831C39478400512ECA /* ConfigurableTableViewController.h */,
 				A6A9CC851C39478400512ECA /* Info.plist */,
 				A6A9CCA11C39482100512ECA /* ConfigurableTableViewController.swift */,
-				A6A9CCB91C394B5800512ECA /* CellConfiguration.swift */,
+				A6A9CCB91C394B5800512ECA /* CellConfigurator.swift */,
 				A683AF671C394BB90076FB0E /* Updatable.swift */,
 			);
 			path = Framework;
@@ -218,7 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A683AF681C394BB90076FB0E /* Updatable.swift in Sources */,
-				A6A9CCBA1C394B5800512ECA /* CellConfiguration.swift in Sources */,
+				A6A9CCBA1C394B5800512ECA /* CellConfigurator.swift in Sources */,
 				A6A9CCA21C39482100512ECA /* ConfigurableTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,7 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A683AF6B1C394D290076FB0E /* UITableViewCell+Margins.swift in Sources */,
-				A6A9CCBB1C394B8800512ECA /* CellConfiguration.swift in Sources */,
+				A6A9CCBB1C394B8800512ECA /* CellConfigurator.swift in Sources */,
 				A6A9CCB71C39498F00512ECA /* TextTableViewCell.swift in Sources */,
 				A6A9CCAF1C39495B00512ECA /* ConfigurableTableViewController.swift in Sources */,
 				A6A9CCB51C39498F00512ECA /* ImageTableViewCell.swift in Sources */,

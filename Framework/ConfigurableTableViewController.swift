@@ -12,9 +12,9 @@ class ConfigurableTableViewController: UIViewController {
 
     weak var tableView: UITableView!
 
-    var items: [CellConfigurationType]
+    var items: [CellConfiguratorType]
 
-    init(items: [CellConfigurationType]) {
+    init(items: [CellConfiguratorType]) {
         self.items = items
         super.init(nibName: nil, bundle: nil)
     }
@@ -37,8 +37,8 @@ class ConfigurableTableViewController: UIViewController {
     }
 
     func registerCells() {
-        for cellConfiguration in items {
-            tableView.registerClass(cellConfiguration.cellClass, forCellReuseIdentifier: cellConfiguration.reuseIdentifier)
+        for cellConfigurator in items {
+            tableView.registerClass(cellConfigurator.cellClass, forCellReuseIdentifier: cellConfigurator.reuseIdentifier)
         }
     }
 }
@@ -50,9 +50,9 @@ extension ConfigurableTableViewController: UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellConfiguration = items[indexPath.row]
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellConfiguration.reuseIdentifier, forIndexPath: indexPath)
-        cellConfiguration.updateCell(cell)
+        let cellConfigurator = items[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellConfigurator.reuseIdentifier, forIndexPath: indexPath)
+        cellConfigurator.updateCell(cell)
         return cell
     }
 }

@@ -1,5 +1,5 @@
 //
-//  CellConfiguration.swift
+//  CellConfigurator.swift
 //  ConfigurableTableViewController
 //
 //  Created by Arkadiusz Holko on 03-01-16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CellConfigurationType {
+protocol CellConfiguratorType {
 
     var reuseIdentifier: String { get }
     var cellClass: AnyClass { get }
@@ -16,7 +16,7 @@ protocol CellConfigurationType {
     func updateCell(cell: UITableViewCell)
 }
 
-struct CellConfiguration<Cell where Cell: Updatable, Cell: UITableViewCell> {
+struct CellConfigurator<Cell where Cell: Updatable, Cell: UITableViewCell> {
 
     let viewData: Cell.ViewData
     let reuseIdentifier: String = NSStringFromClass(Cell)
@@ -29,5 +29,5 @@ struct CellConfiguration<Cell where Cell: Updatable, Cell: UITableViewCell> {
     }
 }
 
-extension CellConfiguration: CellConfigurationType {
+extension CellConfigurator: CellConfiguratorType {
 }

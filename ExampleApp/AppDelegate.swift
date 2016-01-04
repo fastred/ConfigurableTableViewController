@@ -16,10 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         let viewController = ConfigurableTableViewController(items: [
-            CellConfiguration<TextTableViewCell>(viewData: TextCellViewData(title: "Foo")),
-            CellConfiguration<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "Apple")!)),
-            CellConfiguration<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "Google")!)),
-            CellConfiguration<TextTableViewCell>(viewData: TextCellViewData(title: "Bar")),
+            CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "Foo")),
+            CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "Apple")!)),
+            CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "Google")!)),
+            CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "Bar")),
             ])
 
         window = UIWindow(frame: UIScreen.mainScreen().bounds)

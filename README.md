@@ -40,10 +40,10 @@ import ConfigurableTableViewController
 ...
 
 let viewController = ConfigurableTableViewController(items: [
-    CellConfiguration<TextTableViewCell>(viewData: TextCellViewData(title: "Foo")),
-    CellConfiguration<ImageTableViewCell>(viewData: ImageCellViewData(image: apple)),
-    CellConfiguration<ImageTableViewCell>(viewData: ImageCellViewData(image: google)),
-    CellConfiguration<TextTableViewCell>(viewData: TextCellViewData(title: "Bar")),
+    CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "Foo")),
+    CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: apple)),
+    CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: google)),
+    CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "Bar")),
     ])
 
 presentViewController(viewController, animated: true, completion: nil)
