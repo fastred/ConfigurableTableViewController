@@ -63,10 +63,6 @@ To run the example project; clone the repo, open the project and run `ExampleApp
 
 iOS 8 and above.
 
-## Installation
-
-Carthage and CocoaPods compatibility coming soon!
-
 ## Author
 
 Arkadiusz Holko:
