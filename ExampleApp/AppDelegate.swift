@@ -15,12 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        let viewController = ConfigurableTableViewController(items: [
+        let firstSectionConfigurator = SectionConfigurator(cellConfigurators: [
             CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "Foo")),
-            CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "Apple")!)),
+            CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "Apple")!))
+        ])
+        
+        let secondSectionConfigurator = SectionConfigurator(cellConfigurators: [
             CellConfigurator<ImageTableViewCell>(viewData: ImageCellViewData(image: UIImage(named: "Google")!)),
-            CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "Bar")),
-            ])
+            CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "Bar"))
+        ])
+        
+        let viewController = ConfigurableTableViewController(items: [firstSectionConfigurator, secondSectionConfigurator])
 
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = viewController
