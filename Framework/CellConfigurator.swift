@@ -8,6 +8,14 @@
 
 import UIKit
 
+struct SectionConfigurator {
+    var cellConfigurators: [CellConfiguratorType]
+    
+    init(cellConfigurators: [CellConfiguratorType]) {
+        self.cellConfigurators = cellConfigurators
+    }
+}
+
 protocol CellConfiguratorType {
 
     var reuseIdentifier: String { get }
