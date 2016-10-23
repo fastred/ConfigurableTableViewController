@@ -11,8 +11,8 @@ import UIKit
 extension UITableViewCell {
 
     func resetSeparators() {
-        separatorInset = UIEdgeInsetsZero
+        separatorInset = UIEdgeInsets.zero
         preservesSuperviewLayoutMargins = false
-        layoutMargins = UIEdgeInsetsZero
+        layoutMargins = UIEdgeInsets.zero
     }
 }

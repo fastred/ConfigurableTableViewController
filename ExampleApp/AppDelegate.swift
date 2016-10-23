@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         let viewController = ConfigurableTableViewController(items: [
             CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "Foo")),
@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             CellConfigurator<TextTableViewCell>(viewData: TextCellViewData(title: "Bar")),
             ])
 
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
 

@@ -10,7 +10,7 @@ import Foundation
 
 protocol Updatable: class {
 
-    typealias ViewData
+    associatedtype ViewData
 
-    func updateWithViewData(viewData: ViewData)
+    func update(viewData: ViewData)
 }
