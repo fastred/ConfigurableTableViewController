@@ -15,12 +15,12 @@ class ImageTableViewCell: UITableViewCell {
 
         // we should use a custom imageView, but this will do for demonstrational purposes
         imageView?.frame = bounds
-        imageView?.contentMode = .ScaleAspectFit
+        imageView?.contentMode = .scaleAspectFit
 
         resetSeparators()
     }
 
-    func updateWithViewData(viewData: ImageCellViewData) {
+    func update(viewData: ImageCellViewData) {
         imageView?.image = viewData.image
     }
 }

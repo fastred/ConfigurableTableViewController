@@ -13,18 +13,18 @@ protocol CellConfiguratorType {
     var reuseIdentifier: String { get }
     var cellClass: AnyClass { get }
 
-    func updateCell(cell: UITableViewCell)
+    func update(cell: UITableViewCell)
 }
 
-struct CellConfigurator<Cell where Cell: Updatable, Cell: UITableViewCell> {
+struct CellConfigurator<Cell> where Cell: Updatable, Cell: UITableViewCell {
 
     let viewData: Cell.ViewData
-    let reuseIdentifier: String = NSStringFromClass(Cell)
+    let reuseIdentifier: String = NSStringFromClass(Cell.self)
     let cellClass: AnyClass = Cell.self
 
-    func updateCell(cell: UITableViewCell) {
+    func update(cell: UITableViewCell) {
         if let cell = cell as? Cell {
-            cell.updateWithViewData(viewData)
+            cell.update(viewData: viewData)
         }
     }
 }

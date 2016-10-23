@@ -15,12 +15,12 @@ class TextTableViewCell: UITableViewCell {
 
         // we should use a custom imageView, but this will do for demonstrational purposes
         imageView?.frame = bounds
-        imageView?.contentMode = .ScaleAspectFit
+        imageView?.contentMode = .scaleAspectFit
 
         resetSeparators()
     }
 
-    func updateWithViewData(viewData: TextCellViewData) {
+    func update(viewData: TextCellViewData) {
         textLabel?.text = viewData.title
         backgroundColor = UIColor(white: 0.93, alpha: 1)
     }
